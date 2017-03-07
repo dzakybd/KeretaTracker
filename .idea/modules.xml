@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/KeretaTracker.iml" filepath="$PROJECT_DIR$/KeretaTracker.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/keretalocator/keretalocator.iml" filepath="$PROJECT_DIR$/keretalocator/keretalocator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/keretatracker/keretatracker.iml" filepath="$PROJECT_DIR$/keretatracker/keretatracker.iml" />
     </modules>
   </component>
 </project>

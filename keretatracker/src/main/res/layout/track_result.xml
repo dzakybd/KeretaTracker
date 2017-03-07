@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_margin="10dp"
+                android:text="Kereta "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/t_kereta" />
+
+            <TextView
+                android:layout_margin="10dp"
+                android:text=": - "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/kereta" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_margin="10dp"
+                android:text="Tujuan akhir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/t_tujuan" />
+
+            <TextView
+                android:layout_margin="10dp"
+                android:text=": - "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tujuan" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_margin="10dp"
+                android:text="Waktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/t_waktu" />
+
+            <TextView
+                android:layout_margin="10dp"
+                android:text=": - "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/waktu" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_margin="10dp"
+                android:text="Posisi sekarang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/t_posisi" />
+            <TextView
+                android:layout_margin="10dp"
+                android:text=": - "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/posisi" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer"
+        android:text="Tiba di --- pada pukul ---" />
+
+    <Button
+        android:text="Ok"
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/ok" />
+
+</LinearLayout>
