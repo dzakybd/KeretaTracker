@@ -1,14 +1,15 @@
 package id.ac.pens.keretatracker;
 
 import android.app.DatePickerDialog;
-import android.app.Dialog;
 import android.content.ContextWrapper;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.location.Location;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,7 +17,13 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.pixplicity.easyprefs.library.Prefs;
 
 import java.text.SimpleDateFormat;
@@ -29,10 +36,41 @@ public class Main extends AppCompatActivity {
     private SimpleDateFormat dateFormatter;
     private Button button;
     private AlertDialog dialog,alert;
+    private DatabaseReference mFirebaseDatabase;
+    private FirebaseDatabase mFirebaseInstance;
+    private Location mylocation;
+    private String address;
+    private static final String TAG = Main.class.getSimpleName();
+    private static final int LOCATION_PERMISSION_ID = 1001;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mFirebaseInstance = FirebaseDatabase.getInstance();
+        //mFirebaseInstance.getReference("angkot").setValue("-7.280380,112.780960");
+        mFirebaseInstance.getReference("location").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String[] lokasi = dataSnapshot.getValue(String.class).split(",");
+                Toast.makeText(Main.this,lokasi[0]+" "+lokasi[1],Toast.LENGTH_LONG).show();
+//                mylocation.setLatitude(Double.parseDouble(lokasi[0]));
+//                mylocation.setLongitude(Double.parseDouble(lokasi[1]));
+            }
+            @Override
+            public void onCancelled(DatabaseError error) {
+                Log.e(TAG, "Failed to read app title value.", error.toException());
+            }
+        });
+        mFirebaseInstance.getReference("address").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                address = dataSnapshot.getValue(String.class);
+            }
+            @Override
+            public void onCancelled(DatabaseError error) {
+                Log.e(TAG, "Failed to read app title value.", error.toException());
+            }
+        });
         dateFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -45,7 +83,6 @@ public class Main extends AppCompatActivity {
                 datepicker.show();
             }
         });
-
         Calendar newCalendar = Calendar.getInstance();
         datepicker = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
