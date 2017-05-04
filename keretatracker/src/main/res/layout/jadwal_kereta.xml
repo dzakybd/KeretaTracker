@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TableLayout
+    android:layout_above="@+id/btn"
+    android:id="@+id/table"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Stasiun "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stasiun" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Datang "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/datang" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Berangkat "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/berangkat" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Surabaya Kota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbykt" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="- "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbyktdt" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="04.55 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbyktbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Surabaya Gubeng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbygb" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="05.03 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbygbdt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="05.03 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbygbbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Wonokromo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbywn" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="- "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbywndt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="- "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbywnbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Sepanjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sdrspj" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="05.22 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sdrspjdt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="05.29 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sdrspjbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Krian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sdrkr" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="05.42 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sdrkrdt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="05.44 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sdrkrbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Tarik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sdrtr" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="06.07 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sdrtrdt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="06.15 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sdrtrbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Mojokerto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mjkt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="06.24 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mjktdt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="06.27 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mjktbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Curahmalang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jbgcr" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="06.36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jbgcrdt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="06.38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jbgcrbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Sumobito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jbgsm" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="06.43"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jbgsmdt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="06.45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jbgsmbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Peterongan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jbgpt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="06.53"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jbgptdt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="06.55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jbgptbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Jombang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jbg" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="07.01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jbgdt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="07.12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jbgbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Sembung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbg" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="07.20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbgdt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="07.22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbgbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Kertosono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/krtsn" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="07.31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/krtsndt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="07.47"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/krtsnbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Papar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kdrppr" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="08.05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kdrpprdt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="08.12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kdrpprbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Kediri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kdr" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="08.32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kdrdt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="08.35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kdrbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Ngadiluwih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kdrngadi" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="08.45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kdrngadidt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="08.47"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kdrngadibr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Kras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kdrkras" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="08.54"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kdrkrasdt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="08.56"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kdrkrasbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Tulungagung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tlg" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="09.09"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tlgdt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="09.12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tlgbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Sumbergempol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tlgsb" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="09.19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tlgsbdt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="09.21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tlgsbbr" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Ngunut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tlgng" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="09.29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tlgngdt" />
+        <TextView
+            android:layout_margin="10dp"
+            android:text="09.31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tlgngbr" />
+    </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_margin="10dp"
+                android:text="Rejotangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tlgrejo" />
+            <TextView
+                android:layout_margin="10dp"
+                android:text="09.39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tlgrejodt" />
+            <TextView
+                android:layout_margin="10dp"
+                android:text="09.52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tlgrejobr" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_margin="10dp"
+                android:text="Blitar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bltr" />
+            <TextView
+                android:layout_margin="10dp"
+                android:text="10.04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bltrdt" />
+            <TextView
+                android:layout_margin="10dp"
+                android:text="-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bltrbr" />
+        </TableRow>
+</TableLayout>
+
+<Button
+    android:layout_alignParentBottom="true"
+    android:text="Ok"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:textAlignment="center"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:id="@+id/btn" />
+</RelativeLayout>

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "701344931257-i5ke79forbtto5adbirenns4o5eboe8v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.ac.pens.keretatracker",
+            "certificate_hash": "a6ec8c7e5f8b4692e6aec9003c85a9c2844e834f"
+          }
+        },
+        {
           "client_id": "701344931257-3s1uv98jht51qp8u6mavnh3qsnq12p52.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -58,6 +66,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "701344931257-l9rtvomvk1hgsvppmbjbf63kkk2qb9u9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.ac.pens.keretalocator",
+            "certificate_hash": "a6ec8c7e5f8b4692e6aec9003c85a9c2844e834f"
+          }
+        },
         {
           "client_id": "701344931257-3mrgtvv4jm1d75o1da12tm8q3mbbns94.apps.googleusercontent.com",
           "client_type": 1,
